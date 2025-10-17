@@ -39,7 +39,7 @@ const Explore = () => {
             
             <Button
               onClick={() => navigate("/map/heritage")}
-              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-8 text-lg rounded-xl shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-glow)] transition-all duration-300 hover:scale-105"
+              className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold py-8 text-lg rounded-xl shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-glow)] transition-all duration-300 hover:scale-105"
             >
               Heritage Sites
             </Button>
