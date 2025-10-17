@@ -13,22 +13,22 @@ const MapView = () => {
 
   const categoryTitle = category === "heritage" ? "Heritage Sites" : "Art Forms";
 
-  // District pin positions (approximate percentages on the map)
+  // District pin positions (positioned below district names)
   const districtPins = [
-    { id: "kasaragod", name: "Kasaragod", top: "8%", left: "35%" },
-    { id: "kannur", name: "Kannur", top: "18%", left: "40%" },
-    { id: "wayanad", name: "Wayanad", top: "23%", left: "50%" },
-    { id: "kozhikode", name: "Kozhikode", top: "30%", left: "45%" },
-    { id: "malappuram", name: "Malappuram", top: "38%", left: "48%" },
-    { id: "palakkad", name: "Palakkad", top: "48%", left: "42%" },
-    { id: "thrissur", name: "Thrissur", top: "55%", left: "38%" },
-    { id: "ernakulam", name: "Ernakulam", top: "62%", left: "45%" },
-    { id: "idukki", name: "Idukki", top: "65%", left: "52%" },
-    { id: "kottayam", name: "Kottayam", top: "72%", left: "42%" },
-    { id: "alappuzha", name: "Alappuzha", top: "75%", left: "35%" },
-    { id: "pathanamthitta", name: "Pathanamthitta", top: "80%", left: "45%" },
-    { id: "kollam", name: "Kollam", top: "87%", left: "38%" },
-    { id: "thiruvananthapuram", name: "Thiruvananthapuram", top: "95%", left: "42%" },
+    { id: "kasaragod", name: "Kasaragod", top: "10%", left: "40%" },
+    { id: "kannur", name: "Kannur", top: "19%", left: "42%" },
+    { id: "wayanad", name: "Wayanad", top: "25%", left: "58%" },
+    { id: "kozhikode", name: "Kozhikode", top: "32%", left: "38%" },
+    { id: "malappuram", name: "Malappuram", top: "40%", left: "42%" },
+    { id: "palakkad", name: "Palakkad", top: "50%", left: "50%" },
+    { id: "thrissur", name: "Thrissur", top: "57%", left: "35%" },
+    { id: "ernakulam", name: "Ernakulam", top: "64%", left: "38%" },
+    { id: "idukki", name: "Idukki", top: "68%", left: "58%" },
+    { id: "kottayam", name: "Kottayam", top: "74%", left: "40%" },
+    { id: "alappuzha", name: "Alappuzha", top: "77%", left: "28%" },
+    { id: "pathanamthitta", name: "Pathanamthitta", top: "82%", left: "48%" },
+    { id: "kollam", name: "Kollam", top: "89%", left: "35%" },
+    { id: "thiruvananthapuram", name: "Thiruvananthapuram", top: "96%", left: "38%" },
   ];
 
   return (
