@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, X } from "lucide-react";
 import { useNavigate, useParams } from "react-router-dom";
-import keralaMap from "@/assets/kerala-map.jpg";
+import keralaMap from "@/assets/kerala-map.svg";
 import { districtData } from "@/data/districts";
 import ItemDetailPanel from "@/components/ItemDetailPanel";
 

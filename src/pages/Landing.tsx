@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import keralaMap from "@/assets/kerala-map.jpg";
+import keralaMap from "@/assets/kerala-map.svg";
 
 const Landing = () => {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ const Landing = () => {
         {/* Header */}
         <header className="animate-fadeInUp">
           <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-2">
-            Kerala Heritage
+            Echoes of Kerala
           </h1>
           <div className="h-1 w-24 bg-secondary rounded-full"></div>
         </header>
