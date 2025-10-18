@@ -13,39 +13,39 @@ const MapView = () => {
 
   const categoryTitle = category === "heritage" ? "Heritage Sites" : "Art Forms";
 
-  // District pin positions (positioned below district names based on map analysis)
+  // District pin positions (positioned below district names based on map coordinates)
   const districtPins = [
-    { id: "kasaragod", name: "Kasaragod", top: "12%", left: "32%" },
-    { id: "kannur", name: "Kannur", top: "20%", left: "35%" },
-    { id: "wayanad", name: "Wayanad", top: "26%", left: "52%" },
-    { id: "kozhikode", name: "Kozhikode", top: "33%", left: "30%" },
-    { id: "malappuram", name: "Malappuram", top: "41%", left: "35%" },
-    { id: "palakkad", name: "Palakkad", top: "51%", left: "42%" },
-    { id: "thrissur", name: "Thrissur", top: "58%", left: "28%" },
-    { id: "ernakulam", name: "Ernakulam", top: "65%", left: "32%" },
-    { id: "idukki", name: "Idukki", top: "69%", left: "50%" },
-    { id: "kottayam", name: "Kottayam", top: "75%", left: "34%" },
-    { id: "alappuzha", name: "Alappuzha", top: "78%", left: "23%" },
-    { id: "pathanamthitta", name: "Pathanamthitta", top: "83%", left: "40%" },
-    { id: "kollam", name: "Kollam", top: "90%", left: "30%" },
-    { id: "thiruvananthapuram", name: "Thiruvananthapuram", top: "97%", left: "32%" },
+    { id: "kasaragod", name: "Kasaragod", top: "10.8%", left: "11.1%" },
+    { id: "kannur", name: "Kannur", top: "20.7%", left: "24.9%" },
+    { id: "wayanad", name: "Wayanad", top: "26.3%", left: "44.7%" },
+    { id: "kozhikode", name: "Kozhikode", top: "30.6%", left: "34.6%" },
+    { id: "malappuram", name: "Malappuram", top: "39.5%", left: "45.2%" },
+    { id: "palakkad", name: "Palakkad", top: "45.9%", left: "63.8%" },
+    { id: "thrissur", name: "Thrissur", top: "54.6%", left: "53.2%" },
+    { id: "ernakulam", name: "Ernakulam", top: "62.5%", left: "58.0%" },
+    { id: "idukki", name: "Idukki", top: "65.0%", left: "78.9%" },
+    { id: "kottayam", name: "Kottayam", top: "71.7%", left: "65.9%" },
+    { id: "alappuzha", name: "Alappuzha", top: "78.8%", left: "60.9%" },
+    { id: "pathanamthitta", name: "Pathanamthitta", top: "79.2%", left: "74.3%" },
+    { id: "kollam", name: "Kollam", top: "85.8%", left: "74.3%" },
+    { id: "thiruvananthapuram", name: "Thiruvananthapuram", top: "92.2%", left: "74.6%" },
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-primary via-primary to-[hsl(var(--kerala-emerald))]">
       {/* Header */}
-      <header className="p-6 border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-40">
+      <header className="p-6 border-b border-white/20 bg-white/10 backdrop-blur-sm sticky top-0 z-40">
         <div className="container mx-auto flex items-center justify-between">
           <Button
             onClick={() => navigate("/explore")}
             variant="ghost"
             size="lg"
-            className="text-foreground hover:text-primary hover:bg-primary/10"
+            className="text-primary-foreground hover:text-secondary hover:bg-secondary/10"
           >
             <ArrowLeft className="mr-2 h-5 w-5" />
             Back
           </Button>
-          <h1 className="text-2xl font-bold text-foreground">{categoryTitle}</h1>
+          <h1 className="text-2xl font-bold text-primary-foreground">{categoryTitle}</h1>
           <div className="w-24"></div>
         </div>
       </header>
@@ -56,7 +56,7 @@ const MapView = () => {
           {/* Map section */}
           <div className="flex items-start justify-center">
             <div className="relative w-full max-w-2xl">
-              <div className="relative bg-card p-6 rounded-3xl shadow-[var(--shadow-elegant)] border border-border">
+              <div className="relative bg-white/10 backdrop-blur-sm p-6 rounded-3xl shadow-[var(--shadow-elegant)] border border-white/20">
                 <div className="relative">
                   <img
                     src={keralaMap}
@@ -86,7 +86,7 @@ const MapView = () => {
                 </div>
               </div>
               
-              <p className="text-center text-muted-foreground mt-6">
+              <p className="text-center text-primary-foreground/90 mt-6">
                 Click on any district pin to explore
               </p>
             </div>
@@ -101,14 +101,14 @@ const MapView = () => {
             />
           ) : (
             <div className="hidden lg:flex items-center justify-center">
-              <div className="text-center p-12 bg-muted/30 rounded-3xl border-2 border-dashed border-border">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <div className="w-8 h-8 bg-primary rounded-full"></div>
+              <div className="text-center p-12 bg-white/10 rounded-3xl border-2 border-dashed border-white/20">
+                <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-8 h-8 bg-secondary rounded-full"></div>
                 </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">
+                <h3 className="text-lg font-semibold text-primary-foreground mb-2">
                   Select a District
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-primary-foreground/90">
                   Click on any pin on the map to view details
                 </p>
               </div>

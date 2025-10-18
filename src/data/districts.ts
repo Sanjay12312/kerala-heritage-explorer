@@ -1,6 +1,8 @@
 // Placeholder data structure for Kerala districts
 // Users will add photos and descriptions later
 
+import bekalFortImg from "@/assets/bekal-fort.jpg";
+
 export interface DistrictItem {
   id: string;
   name: string;
@@ -20,8 +22,11 @@ export const districtData: Record<string, DistrictData> = {
   kasaragod: {
     heritage: {
       id: "kasaragod-heritage",
-      name: "Kasaragod Heritage",
-      description: "Heritage information will be added here. Click 'Know More' to see detailed view.",
+      name: "Bekal Fort",
+      image: bekalFortImg,
+      description: "Bekal Fort is a magnificent laterite fort located in Kasaragod, overlooking the Arabian Sea. Built in the 17th century, it is the largest fort in Kerala and a testament to the region's rich history. The fort's observation tower offers breathtaking views of the coastline and has been featured in several films.",
+      video: "https://www.youtube.com/embed/ncdNcqGu3FA",
+      audio: "https://www.youtube.com/embed/8O4Kps4ou_g",
     },
     artform: {
       id: "kasaragod-artform",
